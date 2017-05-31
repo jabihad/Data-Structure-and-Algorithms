@@ -1,2 +1,3 @@
-# Data-Structure-and-Algorithms
-Data Structure and classical Algorithm for Competitive Programming and Coding Interview 
+## Data Structure and Algorithms for competitive programming
+
+# Backtracking
