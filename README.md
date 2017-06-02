@@ -1,3 +1,1 @@
-# Data Structure and Algorithms for competitive programming
-
-## Backtracking
+# Data Structure and Algorithms for Competitive Programming
