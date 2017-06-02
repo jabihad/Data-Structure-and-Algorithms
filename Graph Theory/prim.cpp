@@ -18,10 +18,13 @@ struct node
 };
 
 vector<node> adj[10001];
-int taken[10001], cost[10001], source;
+int taken[10001], cost[10001], source, n;
 
 int prim()
 {
+    for(int i=1; i<=n; i++)
+        cost[i] = INF, taken[i] = 0;
+
     int ans = 0;
     priority_queue<node>pq;
 
@@ -56,7 +59,7 @@ int prim()
 }
 int main()
 {
-    int i, j, k, l, m, n, u,v, w, ans=0;
+    int i, j, k, l, m, u, v, w, ans=0;
 
     printf("Please Enter the number of node: ");
     scanf("%d",&n);
@@ -71,7 +74,6 @@ int main()
         scanf("%d%d%d",&u,&v,&w);
         adj[u].push_back(node(v,w));
         adj[v].push_back(node(u,w));
-        cost[i] = INF;
     }
 
     printf("Enter the source: ");
