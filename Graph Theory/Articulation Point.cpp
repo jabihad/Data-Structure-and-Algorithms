@@ -58,7 +58,7 @@ int main()
     }
 
     printf("Please Enter the root: ");
-    scanf("%d",&root);                  /// any node up to n can be given as node
+    scanf("%d",&root);                  /// any node up to n can be given as root
 
     Find_Articulation_Point(root);
 
