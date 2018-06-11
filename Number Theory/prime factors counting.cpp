@@ -29,7 +29,7 @@ int main()
     for(int i=1;i<=n;i++){
 
         scanf("%d%d", &a, &b);          /// primefactor(42) = primefactor(6) + primefactor(7)
-                                        /// primefactor(x) =  primefactor(a) + primefactor(x-a)
+                                        /// primefactor(x) =  primefactor(a) + primefactor(x/a)
         printf("%d\n", cnt[a]-cnt[b]);  /// Total Prime factor of a!/b! = (b+1) * (b+2) * ....* (a-1) * (a) = cnt[a] - cnt[b]
     }
     return 0;
